@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: orange">
+    <div class="container-fluid pt-5">
+      <div class="container pt-5">
+        <h1>Add Product</h1>
+        <form
+          method="post"
+          action="{{ url_for('add_product') }}"
+          enctype="multipart/form-data"
+          class="form"
+        >
+          <label for="name">Product Name:</label>
+          <input class="form-control" type="text" name="name" required />
+          <br />
+          <label for="price">Product Price:</label>
+          <input
+            class="form-control"
+            type="number"
+            step="0.01"
+            name="price"
+            required
+          />
+          <br />
+          <label for="image">Product Image:</label>
+          <input
+            class="form-control"
+            type="file"
+            name="image"
+            accept="image/*"
+            required
+          />
+          <br />
+          <input class="btn btn-primary" type="submit" value="Add Product" />
+        </form>
+        <a href="{{ url_for('index') }}">Back to Product List</a>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

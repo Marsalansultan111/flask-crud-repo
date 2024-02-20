@@ -1,0 +1,188 @@
+/* Basic styling for the navigation */
+nav {
+  font-family: Arial, sans-serif;
+}
+body{
+  background-color: #c1c1c1;
+}
+/* Styling for the list items (navigation items) */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+  position: relative;
+}
+
+/* Styling for the navigation links */
+nav a {
+  text-decoration: none;
+  /* Set your default link color */
+  position: relative;
+}
+
+/* Underline effect on hover */
+nav a::after {
+  content: '';
+  display: block;
+  height: 5px; /* Adjust the thickness of the underline as needed */
+  width: 0;
+  background-color:#F8BF29; /* Set your default underline color */
+  position: absolute;
+  bottom: -5px; /* Adjust the distance from the text to the underline as needed */
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%; /* Fully underline on hover */
+  background-color:#F8BF29; /* Set the underline color on hover */
+}
+
+
+
+#id1{
+  background-color: #3b5d50;
+  color:white;
+}
+#id2 {
+  background-color: #eff2f1;
+}
+#id3 {
+  color: #3b5d50;
+}
+#id4 {
+  border-radius: 50px;
+  display: inline;
+  justify-content: center;
+  background-color: #dce5e4;
+  color: #3b5d50;
+}
+.navbar-toggler {
+  background-color: #3b5d50;
+  border-color: your-desired-color; /* Optional: Change border color if needed */
+}
+
+/* Optional: Change the color of the icon inside the toggler */
+.navbar-toggler-icon {
+  background-color: white;
+}
+.id5{
+    background-color:#EFF2F1;
+}
+#id6 {
+  border-radius: 30px;
+  background-color: #f4ab56;
+  padding:15px 20px;
+}
+#id7 {
+  border-radius: 30px;
+  border: 1px solid white;
+  color:white;
+  font-weight:bold;
+  padding:15px 20px;
+
+}
+#id8 {
+  border-radius: 50px;
+}
+a{
+  color: white;
+}
+.img1{
+    height:90px;
+    width:90px;
+}
+a{
+  text-decoration: none;
+}
+#bgabout{
+    background-color: #EFF2F1;
+    
+}
+.atagid{
+    text-decoration: none;
+}
+.fa-plus-circle{
+  opacity: 0;
+  transition: opacity 1s;
+}
+.abc{
+  transition: 1s;
+}
+/* .abc:hover img{
+  margin-top:-30px;
+} */
+.abc:hover{
+  transform: scaleY(1.1); 
+}
+.abc:hover .clr{
+  background-color:#DCE5E4;
+}
+.abc:hover .fa-plus-circle{
+  opacity: 1;
+    position: relative;
+    /* padding-top: 20px; */
+    top: 16px;}
+/* .favid{
+  height:100px;
+} */
+
+
+#id9{
+  height:250px;
+  width: 180px;
+}
+
+
+
+/* @media only screen and (max-width: 575px) {
+  #id1{
+    background-color: goldenrod !important;
+  }
+
+} */
+
+@media only screen and (max-width: 768px) {
+  .top_image{
+    margin-top: 20px;
+  }
+  .bottom_image{
+    margin-bottom: 20px;
+  }
+  .carousel_gap{
+    margin-bottom:0px;
+  }
+  .product_gap{
+    margin-bottom:0px;
+  }
+  .footer_gap{
+    padding-right:10px;
+  }
+ .abc a img{
+  width: 100%;
+  height: auto;
+ }
+ .abc{
+  /* margin-top: 10PX; */
+  padding-bottom: 50px;
+ }
+ .abc:hover{
+  transform: scaleY(1.1); 
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.gref a {
+  padding-right: 20px;
+}
+ 
+}
+
+/* @media only screen and (max-width: 991) {
+  #id1{
+    background-color: purple;
+  }
+} */
